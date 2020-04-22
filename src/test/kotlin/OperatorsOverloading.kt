@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test
 
 class OperatorsOverloading {
     @Test
-    fun `unary operator overload`() {
+    fun `unary and binary operator overload`() {
         var incrementedTuple = Vector(1, 2)
 
         incrementedTuple++
@@ -13,7 +13,6 @@ class OperatorsOverloading {
 
         incrementedTuple += Vector(3,4)
         incrementedTuple += 1
-
     }
 
     @Test
@@ -30,7 +29,7 @@ private operator fun Vector.plus(int:Int): Vector {
     return Vector(first + int, second + int)
 }
 
-
+// This one enables ++ operator
 operator fun Vector.inc(): Vector {
     return Vector(this.first + 1, this.second + 1)
 }
