@@ -28,7 +28,7 @@ class FrontPage {
                             h1(classes = "color:red") { +"Hello world!" }
                         }
                         div {
-                            a(href = "http://www.tufin.com") { +"TUFIN" }
+                            a(href = "http://www.example.com") { +"EXAMPLE" }
                         }
                         div {
                             button {

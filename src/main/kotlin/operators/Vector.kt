@@ -11,19 +11,20 @@ fun main() {
 
     var first1 = tuple[1]
 
+    //indexing
+
     val list = listOf(1, 2, 3)
     val (f1, f2, f3) = list
 
     list[2] == 3
 
-
+    //list decompose
 
     list.get(2) == 3
 
-    //too bad can't decompose :(
     val (first, second) = tuple
 
-    //how do I fix it?
+    //custom class decompose
 }
 
 private operator fun Vector.get(i: Int): Int = if (i == 0) first

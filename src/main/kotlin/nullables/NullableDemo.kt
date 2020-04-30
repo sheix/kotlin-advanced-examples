@@ -8,11 +8,9 @@ class Something {
 fun main() {
 
 //    ?.
-//
 //    !!
-//
-//            ?:
-//
+//    ?:
+
 
     val `object` = Something()
 
@@ -25,4 +23,11 @@ fun main() {
     if (`object`.property != false)
         println("I'm true or null!")
 
-}
+    try {
+    something.something!!
+    
+    }
+    catch(Exception e) {
+        println("Here it is - null pointer exception!")        
+    }
+    }
